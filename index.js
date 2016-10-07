@@ -33,6 +33,7 @@ module.exports = function (options) {
         options.sonar.language = options.sonar.language;
         options.sonar.sourceEncoding = options.sonar.sourceEncoding || 'UTF-8';
         options.sonar.host = options.sonar.host || { url: 'http://localhost:9000' };
+        options.sonar.cs.opencover.reportsPaths = options.sonar.cs.opencover.reportsPaths 
         options_exec = options.sonar.exec;
         // This property is not for the sonar runner, but for the nodejs exec method, so we remove it after copied it
         delete options.sonar.exec;
